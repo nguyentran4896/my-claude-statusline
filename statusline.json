@@ -1,0 +1,35 @@
+{
+  "format": "{git_branch}{git_status} {directory} {model} {tokens}",
+  "segments": {
+    "git_branch": {
+      "template": " {value}",
+      "value": "{{git.branch}}",
+      "color": "#10b981",
+      "show_when": "{{git.in_repo}}"
+    },
+    "git_status": {
+      "template": " {uncommitted}↕{ahead}↓{behind}",
+      "uncommitted": "{{git.uncommitted_changes}}",
+      "ahead": "{{git.ahead}}",
+      "behind": "{{git.behind}}",
+      "color": "#f59e0b",
+      "show_when": "{{git.has_changes}}"
+    },
+    "directory": {
+      "template": " {value}",
+      "value": "{{cwd.basename}}",
+      "color": "#3b82f6"
+    },
+    "model": {
+      "template": " {value}",
+      "value": "{{model.name}}",
+      "color": "#8b5cf6"
+    },
+    "tokens": {
+      "template": " {used}/{total}",
+      "used": "{{tokens.used}}",
+      "total": "{{tokens.budget}}",
+      "color": "#ec4899"
+    }
+  }
+}
