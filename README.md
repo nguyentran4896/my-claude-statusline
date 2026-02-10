@@ -8,13 +8,13 @@ A beautiful statusline for [Claude Code](https://claude.com/claude-code) showing
 
 ## Install
 
-**Copy this prompt and send it to Claude Code:**
+**Copy and paste this into Claude Code:**
 
 ```
-Please install the statusline from https://github.com/nguyentran4896/my-claude-statusline - download the statusline.json and configure it for me
+Install statusline: download https://raw.githubusercontent.com/nguyentran4896/my-claude-statusline/main/statusline.json to ~/.claude/statusline.json and configure ~/.claude/settings.json if needed
 ```
 
-That's it! Claude will handle everything automatically.
+Claude will automatically download and configure everything.
 
 ## What You Get
 
