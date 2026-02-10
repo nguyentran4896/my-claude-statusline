@@ -12,17 +12,19 @@ A comprehensive statusline configuration for [Claude Code](https://claude.com/cl
 
 ## Preview
 
+![Statusline Preview](statusline-preview.svg)
+
 The statusline displays information in this format:
 ```
- main  3↕0↓0  VN_Flood  Sonnet 4.5  39728/200000
+ main  7↕0↓0  VN_Flood  Sonnet 4.5  44724/200000
 ```
 
-Where:
-- ` main` = Git branch
-- ` 3↕0↓0` = 3 uncommitted changes, 0 commits ahead, 0 behind
-- ` VN_Flood` = Current directory name
-- ` Sonnet 4.5` = Active model
-- ` 39728/200000` = Tokens used / total budget
+**Breakdown**:
+- ` main` = Git branch (green)
+- ` 7↕0↓0` = 7 uncommitted changes, 0 commits ahead, 0 behind (amber)
+- ` VN_Flood` = Current directory name (blue)
+- ` Sonnet 4.5` = Active Claude model (purple)
+- ` 44724/200000` = Tokens used / total budget (pink)
 
 ## Installation
 

@@ -1,0 +1,44 @@
+<svg width="800" height="60" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="60" fill="#1e1e1e"/>
+
+  <!-- Git Branch -->
+  <text x="20" y="37" font-family="'SF Mono', 'Cascadia Code', 'Fira Code', monospace" font-size="16" fill="#10b981">
+    <tspan>󰘬</tspan>
+  </text>
+  <text x="45" y="37" font-family="'SF Mono', 'Cascadia Code', 'Fira Code', monospace" font-size="16" fill="#10b981">
+    main
+  </text>
+
+  <!-- Git Status -->
+  <text x="110" y="37" font-family="'SF Mono', 'Cascadia Code', 'Fira Code', monospace" font-size="16" fill="#f59e0b">
+    <tspan></tspan>
+  </text>
+  <text x="135" y="37" font-family="'SF Mono', 'Cascadia Code', 'Fira Code', monospace" font-size="16" fill="#f59e0b">
+    7↕0↓0
+  </text>
+
+  <!-- Directory -->
+  <text x="225" y="37" font-family="'SF Mono', 'Cascadia Code', 'Fira Code', monospace" font-size="16" fill="#3b82f6">
+    <tspan></tspan>
+  </text>
+  <text x="250" y="37" font-family="'SF Mono', 'Cascadia Code', 'Fira Code', monospace" font-size="16" fill="#3b82f6">
+    VN_Flood
+  </text>
+
+  <!-- Model -->
+  <text x="370" y="37" font-family="'SF Mono', 'Cascadia Code', 'Fira Code', monospace" font-size="16" fill="#8b5cf6">
+    <tspan></tspan>
+  </text>
+  <text x="395" y="37" font-family="'SF Mono', 'Cascadia Code', 'Fira Code', monospace" font-size="16" fill="#8b5cf6">
+    Sonnet 4.5
+  </text>
+
+  <!-- Tokens -->
+  <text x="530" y="37" font-family="'SF Mono', 'Cascadia Code', 'Fira Code', monospace" font-size="16" fill="#ec4899">
+    <tspan></tspan>
+  </text>
+  <text x="555" y="37" font-family="'SF Mono', 'Cascadia Code', 'Fira Code', monospace" font-size="16" fill="#ec4899">
+    44724/200000
+  </text>
+</svg>
