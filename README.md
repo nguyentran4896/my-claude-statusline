@@ -8,11 +8,19 @@ A beautiful statusline for [Claude Code](https://claude.com/claude-code) showing
 
 ## Install
 
+**One-line install:**
+
 ```bash
-curl -fsSL https://raw.githubusercontent.com/nguyentran4896/my-claude-statusline/main/statusline.json -o ~/.claude/statusline.json
+curl -fsSL https://raw.githubusercontent.com/nguyentran4896/my-claude-statusline/main/install.sh | bash
 ```
 
-That's it! Restart Claude Code and your statusline will appear.
+Or manually:
+
+```bash
+mkdir -p ~/.claude && curl -fsSL https://raw.githubusercontent.com/nguyentran4896/my-claude-statusline/main/statusline.json -o ~/.claude/statusline.json
+```
+
+**Then restart Claude Code** to see your new statusline.
 
 ## Features
 
