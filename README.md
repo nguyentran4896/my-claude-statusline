@@ -1,10 +1,20 @@
 # My Claude Statusline
 
-Beautiful statusline for [Claude Code](https://claude.com/claude-code) with git info, directory, model, and tokens.
+Beautiful, information-dense statusline for [Claude Code](https://claude.com/claude-code) with rate limits, git info, token usage, and more.
 
 ## Preview
 
 ![Statusline Preview](preview.png)
+
+## Features
+
+- **Plan indicator** — 🚀 Max / 🎯 Enterprise (emoji icons for compactness)
+- **Project name** — current working directory
+- **Git info** — branch, dirty/clean status, ahead/behind counts
+- **Token usage** — colored progress bar with percentage and size
+- **Rate limits** — 5-hour session + 7-day weekly usage with countdown timers
+- **Model** — current Claude model and version
+- **Output style** — shown when non-default
 
 ## Install
 
@@ -20,9 +30,7 @@ That's it! Claude handles everything.
 
 Edit `~/.claude/statusline-cool.sh` to:
 
-- Change colors (hex values at the top)
-- Modify icons (Nerd Font characters)
-- Adjust output format
-- Add custom segments
-
-The script outputs colored text with ANSI codes.
+- Change colors (ANSI 256 values at the top)
+- Swap plan icons (🚀/🎯 → anything you like)
+- Adjust color thresholds for token/rate limit bars
+- Add or remove segments in the assembly section at the bottom
