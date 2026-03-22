@@ -269,20 +269,16 @@ if [ -n "$five_hour_pct" ] || [ -n "$seven_day_pct" ]; then
   # Build stacked dual bar (top=5h, bottom=7d)
   dual_bar=$(create_dual_bar "$fh_pct" "$sd_pct" 10 "$fh_ci" "$sd_ci")
 
-  # Format reset times
+  # Format reset times — placed next to their respective labels
   fh_reset=$(format_reset "$five_hour_reset")
   sd_reset=$(format_reset "$seven_day_reset")
-  reset_str=""
-  if [ -n "$fh_reset" ] && [ -n "$sd_reset" ]; then
-    reset_str=" ${c_dim}⏳${fh_reset}·${sd_reset}${c_reset}"
-  elif [ -n "$fh_reset" ]; then
-    reset_str=" ${c_dim}⏳${fh_reset}${c_reset}"
-  elif [ -n "$sd_reset" ]; then
-    reset_str=" ${c_dim}⏳${sd_reset}${c_reset}"
-  fi
+  fh_reset_str=""
+  sd_reset_str=""
+  [ -n "$fh_reset" ] && fh_reset_str=" ${c_dim}⏳${fh_reset}${c_reset}"
+  [ -n "$sd_reset" ] && sd_reset_str=" ${c_dim}⏳${sd_reset}${c_reset}"
 
-  # Option C layout: 5h 55% ██████▀░░░ 22% 7d
-  seg_rate="${c_white_dim}5h${c_reset} ${fh_color}${fh_pct}%${c_reset} ${dual_bar} ${sd_color}${sd_pct}%${c_reset} ${c_white_dim}7d${c_reset}${reset_str}"
+  # Layout: ⏳2h25m 71% ██████▀░░░ 22% ⏳Thu 5PM
+  seg_rate="${fh_reset_str:+${fh_reset_str} }${fh_color}${fh_pct}%${c_reset} ${dual_bar} ${sd_color}${sd_pct}%${c_reset}${sd_reset_str}"
 fi
 
 # ── Output style ──
